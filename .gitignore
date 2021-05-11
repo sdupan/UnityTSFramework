@@ -1,0 +1,12 @@
+.vs
+/Library
+/Temp
+Assets/StreamingAssets.meta
+Assets/StreamingAssets/
+/*.csproj
+/*.sln
+UnityVS
+/Assets/UnityVS.meta
+.DS_Store
+*.o
+TsProj/node_modules/
