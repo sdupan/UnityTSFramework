@@ -1,20 +1,19 @@
-# Unity Lua Framework
+# Unity TypeScript Framework
 
 ## 简介
 
-    Unity下基于Addressable Assets System和xLua的全lua编程框架。
+    Unity下基于Addressable Assets System和puerts的全TypeScript编程框架。
 
     记录作者在学习Unity过程中常用的技术及插件，并形成框架体系，方便温故知新。
 
-## 各平台库编译
+## 各平台库
 
-    请下载 https://github.com/sdupan/XLua-Build  并自行编译各平台库
+    请下载 https://github.com/Tencent/puerts/releases  并拷贝puerts/unity/Assets下的所有内容到您项目的Assets目录下
 
 ## 运行环境
 
     1、请在Unity2019.4及以上环境运行
-    2、运行前，执行菜单：LuaGame/Publish Lua Scripts
-    3、打包APK或ipa前，执行菜单：XLua/Generate Code
+    2、打包APK或ipa前，执行菜单：puerts/Generate Code
 
 ## 入口
 
@@ -22,7 +21,7 @@
 
 * C#脚本：Assets/Scripts/GameEntry.cs
 
-* Lua脚本：Assets/LuaScripts/GameMain.lua
+* TypeScript脚本：Assets/TsProj/GameMain.ts
 
 ## 主要功能模块
 
@@ -34,9 +33,9 @@
 
     ★ 能够方便实现增量更新、分包、边玩边下功能。
 
-* Lua框架：[xLua](https://github.com/Tencent/xLua)
+* TypeScript框架：[puerts](https://github.com/Tencent/puerts)
 
-    ★ 支持热补丁修复，运行时下用Lua替换C#实现。
+    ★ 全引擎，全平台支持反射Binding，无需额外（生成代码）步骤即可开发。
 
     ★ 能用同一套代码，实现编辑器、运行时环境下的资源加载、更新，且能自动管理和加载全部依赖项。
 
@@ -49,18 +48,6 @@
     ★ 大部分UGUI需要用插件完成的功能，FairyGUI均已经内置，而且很多可以在编辑器零脚本完成。
 
     ★ FairyGUI也可以和UGUI混用，方便处理一些特殊需求。
-
-* 网络通信：[LuaSocket](https://github.com/diegonehab/luasocket)
-
-    ★ Lua的网络库，它提供 TCP、UDP、DNS、FTP、HTTP、SMTP、MIME 等多种网络协议的访问操作。
-
-    ★ 一部分是用 C 写的核心，提供对 TCP 和 UDP 传输层的访问支持。另外一部分是用 Lua 写，负责应用功能的网络接口处理。
-
-* 网络协议：[Protobuf](https://github.com/starwing/lua-protobuf)
-
-    ★ protobuf是Google提供一个具有高效的协议数据交换格式工具库。
-
-    ★ 此为protobuf在lua下的实现，支持5.1, 5.2, 5.3, 5.4和LuaJIT。
 
 * 缓动动画：[DOTWeen](http://dotween.demigiant.com/)
     
@@ -97,6 +84,4 @@
 
 ## 参考
 
-* [tolua](https://github.com/topameng/tolua)
-
-* [Nice-Lua](https://github.com/justin-sky/nice-lua)
+* [Nice-TS](https://github.com/Justin-sky/Nice-TS)
